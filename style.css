@@ -1,3 +1,118 @@
+:root {
+    --main-color: rgb(154, 230, 255);
+    --second-color: rgb(236, 241, 248);
+}
+
 body {
     display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left {
+    position: relative;
+    width: 40vw;
+    background-image: url(./image/beach.jpg);
+    background-size: cover;
+}
+
+.right {
+    width: 60vw;
+}
+
+.logo-section {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    top: 30%;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-box {
+    width:125px;
+    height: 125px;
+    background-image: url(./image/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.brand-name-box {
+    font-size: 96px;
+    color: var(--main-color);
+    font-family: 'SpotCookieRegular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dummy-text,
+.action-box,
+form {
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dummy-text {
+    font-size: 1.5rem;
+    background-color: var(--second-color);
+    background-clip: border-box;
+
+}
+
+form {
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    
+}
+
+form p {
+    font-size: 1.5rem;
+}
+
+.input-area {
+    display: flex;
+}
+
+
+
+.first-col,
+.second-col {
+    flex: 1;
+}
+
+input,
+label {
+    display: block;
+}
+
+input {
+    margin-bottom: 2rem;
+    border: 1px solid #E5E7EB;
+    box-shadow: rgba(0,0,0,0.1);
+    width: 70%;
+    height: 2rem;
+}
+
+label {
+    font-size: 0.85rem;
+}
+
+input:focus {
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: rgb(12, 99, 0);
+    color: white;
+    height: 3rem;
+    width: 12rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    
 }

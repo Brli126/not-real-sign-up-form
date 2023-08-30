@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/spotcookie-regular" type="text/css"/>
 </head>
 <body>
     <div class="left">
-        <div class="logo-section"></div>
+        <div class="logo-section">
+            <div class="logo-box"></div>
+            <div class="brand-name-box">Xplorer</div>
+        </div>
     </div>
     <div class="right">
         <div class="dummy-text">
@@ -16,31 +20,33 @@
             to help you realize your deepest dreams. Sign up now to get started.</p>
             <p>You know you want to.</p>
         </div>
-        <form action="" method="post">
-            <p>Let's do this</p>
-            <div class="first-col">
-                <label for="First-name">FIRST NAME</label>
-                <input type="text" id="First-name" name="first-name">
+        <form action="" method="post" id="info">
+            <p>Let's do this!</p>
+            <div class="input-area">
+                <div class="first-col">
+                    <label for="First-name">FIRST NAME</label>
+                    <input type="text" id="First-name" name="first-name" required>
 
-                <label for="Email">EMAIL</label>
-                <input type="email" id="Email" name="email">
+                    <label for="Email">EMAIL</label>
+                    <input type="email" id="Email" name="email" required>
 
-                <label for="Password">PASSWORD</label>
-                <input type="password" id="Password" name="password">
-            </div>
-            <div class="second-col">
-                <label for="Last-name">LAST NAME</label>
-                <input type="text" id="Last-name" name="last-name">
+                    <label for="Password">PASSWORD</label>
+                    <input type="password" id="Password" name="password" required>
+                </div>
+                <div class="second-col">
+                    <label for="Last-name">LAST NAME</label>
+                    <input type="text" id="Last-name" name="last-name" required>
 
-                <label for="Phone-nummber"></label>
-                <input type="tel" id="Phone-nummber" name="phone-number">
+                    <label for="Phone-nummber">PHONE NUMBER</label>
+                    <input type="tel" id="Phone-nummber" name="phone-number">
 
-                <label for="Confirm"></label>
-                <input type="password" id="Confirm" name="password-confirm">
+                    <label for="Confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="Confirm" name="password-confirm" required>
+                </div>
             </div>
         </form>
         <div class="action-box">
-            <button class="create-acc-btn" type="button">Create Account</button>
+            <button for="info" class="create-acc-btn" type="submit">Create Account</button>
             <p>Already have an account? <span>Log in</span></p>
         </div>
 

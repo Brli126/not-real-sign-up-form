@@ -20,33 +20,36 @@
             to help you realize your deepest dreams. Sign up now to get started.</p>
             <p>You know you want to.</p>
         </div>
-        <form action="" method="post" id="info">
-            <p>Let's do this!</p>
-            <div class="input-area">
-                <div class="first-col">
-                    <label for="First-name">FIRST NAME</label>
-                    <input type="text" id="First-name" name="first-name" required>
+        <form action="" method="post" id="myform">
+            
+                <p>Let's do this!</p>
+                <div class="input-area">
+                    <div class="first-col">
+                        <label for="First-name">FIRST NAME</label>
+                        <input type="text" id="First-name" name="first-name" required>
 
-                    <label for="Email">EMAIL</label>
-                    <input type="email" id="Email" name="email" required>
+                        <label for="Email">EMAIL</label>
+                        <input type="email" id="Email" name="email" required>
 
-                    <label for="Password">PASSWORD</label>
-                    <input type="password" id="Password" name="password" required>
+                        <label for="Password">PASSWORD</label>
+                        <input type="password" id="Password" name="password" required>
+                    </div>
+                    <div class="second-col">
+                        <label for="Last-name">LAST NAME</label>
+                        <input type="text" id="Last-name" name="last-name" required>
+
+                        <label for="Phone-nummber">PHONE NUMBER</label>
+                        <input type="tel" id="Phone-nummber" name="phone-number">
+
+                        <label for="Confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="Confirm" name="password-confirm" required>
+                    </div>
                 </div>
-                <div class="second-col">
-                    <label for="Last-name">LAST NAME</label>
-                    <input type="text" id="Last-name" name="last-name" required>
-
-                    <label for="Phone-nummber">PHONE NUMBER</label>
-                    <input type="tel" id="Phone-nummber" name="phone-number">
-
-                    <label for="Confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="Confirm" name="password-confirm" required>
-                </div>
-            </div>
+            
+            
         </form>
         <div class="action-box">
-            <button for="info" class="create-acc-btn" type="submit">Create Account</button>
+            <button class="create-acc-btn" type="submit" form="myform">Create Account</button>
             <p>Already have an account? <span>Log in</span></p>
         </div>
 
